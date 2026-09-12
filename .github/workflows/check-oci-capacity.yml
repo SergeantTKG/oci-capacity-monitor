@@ -35,7 +35,7 @@ jobs:
         run: |
           mkdir -p "$HOME/.oci"
 
-          printf '%s\n' "$OCI_PRIVATE_KEY" \
+          printf '%s\nOCI_API_KEY\n' "$OCI_PRIVATE_KEY" \
             > "$HOME/.oci/oci_api_key.pem"
 
           chmod 600 "$HOME/.oci/oci_api_key.pem"
